@@ -1,0 +1,26 @@
+<annotation>
+	<folder>VOC2007</folder>
+	<filename>original_351.jpg</filename>
+	<path>original_351.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>297</width>
+		<height>169</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>oneheart</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>190</xmin>
+			<ymin>48</ymin>
+			<xmax>254</xmax>
+			<ymax>111</ymax>
+		</bndbox>
+	</object>
+</annotation>
