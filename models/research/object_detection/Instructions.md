@@ -12,7 +12,7 @@
 
 [使用TensorFlow Lite将ssd_mobilenet移植至安卓客户端](https://blog.csdn.net/qq_26535271/article/details/83031412)
 
-整个项目代码(包括models和android，不包括编译的tensorflow):[代码地址]()
+整个项目代码(包括models和android，不包括编译的tensorflow):[代码地址](https://github.com/buyizhiyou/mobilenetv2_ssd_tf)
 项目中数据只有一类手势，android里面有量化和非量化两种模型
 
 ### 环境准备
@@ -161,8 +161,9 @@ DetectorTest.java也有上面表示两个文件路径的变量，我也改了，
 我还改了TFLiteObjectDetectionAPIModel.java里面的labelOffset为0,因为我发现不改下标会有溢出。
 
 3. **结果**
-模型大约18M,运行时间约300ms
+模型大约18M,运行时间约200ms
 效果:
+![](imgs/4.jpg)
 
 ###　训练量化版本和时间优化
 [TensorFlow Mobilenet SSD模型压缩并移植安卓上以达到实时检测效果](https://blog.csdn.net/qq_26535271/article/details/84930868?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.channel_param&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.channel_param)
@@ -198,3 +199,4 @@ python tflite_convert.py  --graph_def_file=tflite_graph.pb --output_format=TFLIT
 5. **效果** 
 模型大约4M,运行时间约20-30ms
 运行效果:
+![](imgs/3.jpg)
